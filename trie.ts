@@ -43,6 +43,7 @@ class Tnode {
         }
 
     }
+
     search(word: string): Tnode | null {
         let currentNode: Tnode = this;
         let exists: boolean = false;
@@ -117,9 +118,8 @@ for (let i = 0; i < strs.length; i++) {
     trns.add(strs[i])
 }
 
-//console.log(trns.search("flow")?.uniqueChild)
-trns.searchPrefix();
+trns.searchPrefix();//Output: "co"
 
 
-//var chr = String.fromCharCode(97 + 0);
-//var num = "a".charCodeAt(0)
+//const chr = String.fromCharCode(97 + 0);
+//const num = "a".charCodeAt(0)
